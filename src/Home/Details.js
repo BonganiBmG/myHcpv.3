@@ -77,7 +77,7 @@ const Details = () => {
 
   const renderCard = ({ item, index }) => {
     return (
-      <View style={{ backgroundColor: 'white', borderRadius: 18, padding: 10, height: 10, display: 'flex', flexDirection: 'row' }}>
+      <View style={{ backgroundColor: 'white', borderRadius: 18, padding: 10, height: 1, display: 'flex', flexDirection: 'row' }}>
         <View style={{ margin: 10 }}>
           <Text style={{ fontSize: 20, width: Dimensions.get('window').width / 2, }}>{item.name}</Text>
           

@@ -6,13 +6,21 @@ import Home from './src/Home/Home';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Details from './src/Home/Details';
 import SignUp from './src/Home/SignUp';
+import firebaseConfig from './src/firebaseConfig';
+//import * as firebase from 'firebase'
 //import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+//import { initializeApp } from "firebase/app";
 
 
 
 
 const Stack = createNativeStackNavigator();
 export default function App() {
+
+  //if (!firebaseConfig.apps.length){
+    //console.log('Connected with Firebase')
+    //firebaseConfig.initializeApp(firebaseConfig);
+  //}
   return (
     <NavigationContainer>
       <Stack.Navigator>
