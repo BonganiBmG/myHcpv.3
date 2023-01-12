@@ -77,10 +77,12 @@ const Details = () => {
 
   const renderCard = ({ item, index }) => {
     return (
-      <View style={{ backgroundColor: 'white', borderRadius: 18, padding: 10, height: 1, display: 'flex', flexDirection: 'row' }}>
+      <View style={{ backgroundColor: 'white', borderRadius: 18, padding: 10, height: 150, display: 'flex', flexDirection: 'row' }}>
         <View style={{ margin: 10 }}>
           <Text style={{ fontSize: 20, width: Dimensions.get('window').width / 2, }}>{item.name}</Text>
-          
+          <Text style={{ fontSize: 18, fontWeight: 100}}>{item.catergory}</Text>
+          <Text style={{ fontSize: 16, color: '#00b8d4'}}>Reviews {item.review} <MaterialIcons name="start-rate" size={16} color="00b8d4" /></Text>
+          <Text style={{ fontSize: 20, width: Dimensions.get('window').width / 2, }}>{item.name}</Text>
 
 
         </View>
