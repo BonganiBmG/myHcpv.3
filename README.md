@@ -5,10 +5,30 @@ To run the Health as a Service App, you will need the following software install
 * Node.js
 * MongoDB
 * Expo CLI
+
+Technical Details
+The Health as a Service App is built using the following technologies:
+* React Native: The app is built using the React Native framework, which enables the development of cross-platform mobile applications.
+* Firebase: Firebase is used for user authentication, data storage, and real-time database management.
+* Google Maps API: The app uses the Google Maps API to display the location of healthcare practitioners, pharmacies, and emergency services.
+* Twilio API: The Twilio API is used for voice and SMS communication with patients and emergency services.
+* Stripe API: The Stripe API is integrated into the app to facilitate payment processing for wellness programs.
+
+
+
 Installation
 1. Clone the Health as a Service App repository from GitHub.
 2. Install the required packages by running the command npm install in the project directory.
 3. Start the development server by running the command npm start in the project directory.
+
+To run the Health as a Service App, follow these steps:
+1. Clone the repository from GitHub.
+2. Install the dependencies using npm install.
+3. Create a Firebase account and configure the Firebase SDK in the app.
+4. Obtain Google Maps, Twilio, and Stripe API keys and integrate them into the app.
+5. Run the app using npm start.
+
+
 Usage
 Sign Up and Login
 When you first open the myHcp App, you will be prompted to sign up or log in. If you are a new user, click the "Sign Up" button to create a new account. If you already have an account, enter your credentials and click the "Login" button.
