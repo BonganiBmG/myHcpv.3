@@ -7,8 +7,9 @@ This project aims to create a platform that connects healthcare practitioners an
 ### Prerequisites
 To run the Health as a Service App, you will need the following software installed on your machine:
 * Node.js
-* MongoDB
+* MongoDB or Firebase
 * Expo CLI
+
 
 ## Technical Details
 The Health as a Service App is built using the following technologies:
