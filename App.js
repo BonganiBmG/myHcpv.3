@@ -1,26 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// Import components
 import Login from './src/Login';
 import Home from './src/Home/Home';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Details from './src/Home/Details';
 import SignUp from './src/Home/SignUp';
-import firebaseConfig from './src/firebaseConfig';
-//import * as firebase from 'firebase'
-//import { ViewPropTypes } from 'deprecated-react-native-prop-types';
-//import { initializeApp } from "firebase/app";
 
-
-
+// Import Firebase - already initialized in the config file
+import { app, auth, db } from './src/firebaseConfig';
 
 const Stack = createNativeStackNavigator();
-export default function App() {
 
-  //if (!firebaseConfig.apps.length){
-    //console.log('Connected with Firebase')
-    //firebaseConfig.initializeApp(firebaseConfig);
-  //}
+export default function App() {
+  // Firebase is already initialized in the firebaseConfig.js file
+  console.log('Firebase app initialized');
+  
   return (
     <NavigationContainer>
       <Stack.Navigator>
